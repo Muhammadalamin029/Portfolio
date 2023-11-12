@@ -1,0 +1,75 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;900&family=Ubuntu&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+h1 h2 h3 h4 h5 h6 {
+    font-family: "Montserrat";
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.container-fluid {
+    padding: 5% 13%;
+    text-align: center;
+}
+
+.coloured-section {
+    background-color: #191d2b;
+    color: #fff;
+    height: 100%;
+}
+
+/* Title Section */
+
+#title .container-fluid {
+    text-align: left;
+}
+
+.title-image img {
+    height: 500px;
+}
+
+.name {
+    color: #1845be;
+}
+
+.title-text .section-header {
+    margin-top: 150px;
+}
+
+.section-header {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+/* About Section */
+
+.my-info {
+    margin-top: 50px;
+    text-align: left;
+}
+
+.about-image {
+    height: 400px;
+}
+
+meter {
+    width: 300px;
+}
+
+.skill {
+    text-align: left;
+}
+
+.skill p {
+    margin-bottom: 1px;
+}
+
+.percent {
+    font-size: small;
+}
