@@ -5,6 +5,8 @@
 body {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
+    background-color: #191d2b;
+    color: #fff;
 }
 
 h1 h2 h3 h4 h5 h6 {
@@ -16,12 +18,6 @@ h1 h2 h3 h4 h5 h6 {
 .container-fluid {
     padding: 5% 13%;
     text-align: center;
-}
-
-.coloured-section {
-    background-color: #191d2b;
-    color: #fff;
-    height: 100%;
 }
 
 /* Title Section */
