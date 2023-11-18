@@ -40,18 +40,18 @@
 
         </nav>
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-lg-6">
             <div class="title-text">
               <h2 class="section-header">Hi, i'm <span class="name">Al-ameen</span>.</h2>
               <h3>Frontend developer.</h3>
               <p>I create stunning website for your business.I am highly experienced in web design and develoment.</p>
-              <button type="button" class="btn btn-light hire-button">Hire me</button>
+              <button type="button" class="btn btn-primary hire-button">Hire me</button>
             </div>
           </div>
 
-          <div class="col-md-6">
+          <div class="col-lg-6">
             <div class="title-image">
-              <img src="Ameen.png" alt="">
+              <img src="images/Ameen.png" alt="">
             </div>
           </div>
         </div>
@@ -65,7 +65,7 @@
 
     </section>
 
-    <section id="about">
+    <section id="about" class="coloured-section">
       <div class="container-fluid">
         <h1 class="section-header">About <span class="name">Me.</span></h1>
 
@@ -73,13 +73,15 @@
           
           <div class="row">
             <div class="col-lg-6">
-              <img class="about-image" src="Ameen.png">
+              <img class="about-image" src="images/Ameen.png">
             </div>
             <div class="col-lg-6">
-              <h4>information about me</h4>
-              <p class="info-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore minima nulla expedita ullam pariatur maxime fuga harum! Quaerat, animi ipsam veritatis officia laudantium similique aliquam facere delectus. Numquam, ut eius!</p>
-              <p class="info-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium voluptate ratione fuga quae ullam architecto distinctio error. Mollitia ex eligendi, aliquid eaque labore voluptas, repudiandae pariatur numquam libero corrupti non!</p> 
-              <p class="info-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium voluptate ratione fuga quae ullam architecto distinctio error. Mollitia ex eligendi, aliquid eaque labore voluptas, repudiandae pariatur numquam libero corrupti non!</p>
+              <h2 class="section-subheader">I'm Al-amin</h2>
+              <h4>A lead <span class="name">Frontend Developer.</span><br>Based in <span class="name">Nigeria.</span></h4>
+              <p>I design and develop services for customers specializing creating stylish,modern websites,web services and online stores.My passion is to design digital user experience through meaningful interaction.Check out my portfolio.</p>
+              
+              <hr>
+              <button type="button" class="btn btn-outline-primary hire-button">Download CV</button>
             </div>
             
           </div>
@@ -88,7 +90,7 @@
         <hr>
 
         <div class="my-skills">
-          <h4>My Skills</h4>
+          <h4 class="section-subheader">My Skills</h4>
           <div class="row">
             <div class="col-lg-6">
               <div class="skill">
@@ -129,10 +131,47 @@
       <div class="container-fluid">
         <h1 class="section-header">My <span class="name">Portfolio</span></h1>
         <h6>Here are some of the project i have done in various programming language</h6>
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="port">
+              <img src="images/coding.png" alt="">
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="port">
+              <img src="images/coding.png" alt="">
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="port">
+              <img src="images/coding.png" alt="">
+            </div>
+          </div>
+        </div>
       </div>
       
     </section>
+
+    <section id="contact">
+      <div class="container-fluid">
+        <h1 class="section-header">Contact <span class="name">Me</span></h1>
+
+        <div class="form">
+          <form action="">
+            <input class="first-child child" type="text" placeholder="your name">
+            <input class="last-child child" type="email" placeholder="your email"><br>
+            <input type="text" placeholder="your subject"><br>
+            <textarea placeholder="message here......" cols="15" rows="8"></textarea>
+          </form>
+        </div>
+
+      </div>
+    </section>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
