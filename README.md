@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Ameenu Musa — Portfolio
 
-## Getting Started
+Personal portfolio for Ameenu Musa, a full-stack developer based in Nigeria. The site presents four products — Bevis, LEL Store, Oron, and DevAssist — with the same case-study structure: context, what was built, technical notes, and a live link.
 
-First, run the development server:
+## Stack
+
+- Next.js 16 (App Router)
+- React 19 and TypeScript
+- Tailwind CSS v4
+- Schibsted Grotesk and Fragment Mono via `next/font`
+- No UI kit, icon library, form service, or animation library
+
+## Run locally
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Production checks:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run lint
+npm run build
+npm run start
+```
 
-## Learn More
+## Content
 
-To learn more about Next.js, take a look at the following resources:
+- `src/content/projects.ts` — project copy, stack, and live links
+- `src/content/experience.ts` — roles and education
+- `src/content/skills.ts` — capability matrix
+- `src/content/site.ts` — profile, navigation, and social links
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Project pages are anchored sections on the home page: `#bevis`, `#lel-store`, `#oron`, and `#devassist`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Assets
 
-## Deploy on Vercel
+- `public/work/*.webp` — screenshots captured from the live products in October 2026
+- `public/og.png` — social preview image
+- `src/app/icon.svg` — favicon
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The project screenshots are real captures, not mockups. If a live product changes substantially, replace its image rather than editing the screenshot.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Environment
+
+Set the public site URL for canonical, Open Graph, sitemap, and JSON-LD URLs:
+
+```bash
+NEXT_PUBLIC_SITE_URL=https://your-domain.example
+```
+
+Without it, the site falls back to `http://localhost:3000`, which is correct for local work but not for production metadata.
+
+## Notes
+
+- LEL Store is client-owned, single-vendor work. The live site is [lelstore.com](https://lelstore.com/).
+- Bevis, Oron, and DevAssist are personal products.
+- Only live project links are shown. Private repositories are not linked.
+- No usage, revenue, or testimonial claims are made on the site.
