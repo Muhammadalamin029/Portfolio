@@ -52,7 +52,7 @@ Set the public site URL for canonical, Open Graph, sitemap, and JSON-LD URLs:
 NEXT_PUBLIC_SITE_URL=https://your-domain.example
 ```
 
-Without it, the site falls back to `http://localhost:3000`, which is correct for local work but not for production metadata.
+Without it, the site uses Vercel's project production URL when available, then the deployment URL. Local development falls back to `http://localhost:3000`.
 
 ## Notes
 
